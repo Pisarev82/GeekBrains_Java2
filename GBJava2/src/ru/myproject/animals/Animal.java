@@ -32,7 +32,7 @@ package ru.myproject.animals;
             setOnDistance(false);
         }
 
-        private void setOnDistance(boolean onDistance) {
+        public void setOnDistance(boolean onDistance) {
             this.onDistance = onDistance;
         }
 

@@ -29,22 +29,25 @@ public class App {
 
         System.out.println("Старт!");
 
-        for (int i = 0; i < obstacles.length; i++) {
-            Obstacle obstacle = obstacles[i];
-            System.out.println("- Препятствие " + obstacle);
-            for (int j = 0; j < animals.length; j++) {
-                Animal animal = animals[j];
-                if (animal.isOnDistance()) {
-                    obstacle.doIt(animal);
-                }
-            }
-        }
-
-        for (int i = 0; i < animals.length; i++) {
-            Animal animal = animals[i];
-            if (animal.isOnDistance()) {
-                System.out.println(animal.getName() + " ФИНИШИРОВАЛ!!!");
-            }
-        }
+//        for (int i = 0; i < obstacles.length; i++) {
+//            Obstacle obstacle = obstacles[i];
+//            System.out.println("- Препятствие " + obstacle);
+//            for (int j = 0; j < animals.length; j++) {
+//                Animal animal = animals[j];
+//                if (animal.isOnDistance()) {
+//                    obstacle.doIt(animal);
+//                }
+//            }
+//        }
+//
+//        for (int i = 0; i < animals.length; i++) {
+//            Animal animal = animals[i];
+//            if (animal.isOnDistance()) {
+//                System.out.println(animal.getName() + " ФИНИШИРОВАЛ!!!");
+//            }
+//        }
+        Race race = new Race(animals, obstacles);
+        race.race();
+        race.raceWithObstacle(obstacles[2]);
     }
 }
