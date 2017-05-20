@@ -10,5 +10,12 @@
       </SOURCES>
       <jarDirectory url="file:///Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/mysql-connector-java-5.1.42" recursive="false" />
     </library>
+    <library name="mysql-connector-java-5.1.42-bin">
+      <CLASSES>
+        <root url="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/mysql-connector-java-5.1.42-bin.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
 </application>
